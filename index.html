@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Box Studios</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend+Exa:wght@100..900&display=swap');
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="menu-lateral">
+            <img src="assets/Logo.webp" alt="Logo Black box">
+            <a href="#inicio">Início</a>
+            <a href="#historia">História</a>
+            <a href="#produtos">Jogos</a>
+            <a href="#cadastro">Fique por dentro</a>
+        </nav>
+
+        <main class="conteudo">
+            <section id="inicio">
+                <h1>Black Box Studios</h1>
+                <p>Unlocking Worlds, Igniting Imagination.</p>
+            </section>
+
+            <section id="historia">
+                <h2>Nossa História</h2>
+                <p>Black Box Studios nasceu do sonho de um único desenvolvedor, apaixonado por explorar o desconhecido e criar experiências que ultrapassem o comum. Inspirado pela ideia de uma caixa preta, onde mistério e descoberta se encontram, ele fundou o estúdio com a missão de entregar jogos que instigassem a curiosidade, desafiassem o jogador e desbravassem novas fronteiras no entretenimento digital. Aqui, acreditamos que cada jogo é uma chave para liberar a imaginação e convidamos você a explorar esses mundos com a gente.</p>
+            </section>
+
+            <section id="produtos">
+                <h2>Nossos Jogos</h2>
+                <div class="categoria">
+                    <div class="produto">
+                        <h4>Chronicles of Elaris</h4>
+                        <img src="assets/Elaris.webp" alt="Elaris">
+                        <p>Uma aventura em um mundo mágico, com um jovem guerreiro explorando paisagens encantadas e mistérios.</p>
+                    </div>
+                    <div class="produto">
+                        <h4>Neon City Drift</h4>
+                        <img src="assets/NCD.webp" alt="Neon City Drift">
+                        <p>Corridas e combates em uma metrópole futurista, repleta de luzes de néon e ação de alta velocidade.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="cadastro">
+                <h2>Fique por dentro das novidades</h2>
+                <p>Cadastre-se para receber notícias e itens in game!</p>
+                <form action="processar_cadastro.php" method="post">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" required><br>
+
+                    <label for="endereco">Endereço:</label><br>
+                    <input type="text" id="endereco" name="endereco" required><br>
+
+                    <label for="data_nascimento">Data de Nascimento:</label><br>
+                    <input type="date" id="data_nascimento" name="data_nascimento" required><br>
+
+                    <label for="telefone">Telefone:</label><br>
+                    <input type="tel" id="telefone" name="telefone" required><br>
+
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+
+                    <input type="submit" value="Cadastrar">
+                </form>
+                <p>Ao se cadastrar, você concorda com nossa <a href="#">Política de Privacidade</a>.</p>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
